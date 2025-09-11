@@ -1,0 +1,6 @@
+PyQt5
+python-dotenv
+langchain-core
+langchain-openai
+langchain-tools
+langgraph
