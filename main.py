@@ -11,7 +11,6 @@ load_dotenv() # Load environment variables from .env file
 @tool
 def calculator(a: float, b:float) -> str:
     """Useful for performing basic calculations with numbers"""
-    print("Tool has been called.")
     return f"The sum of {a} and {b} is {a + b}"
 
 @tool
@@ -19,7 +18,7 @@ def joshuaRamirez() -> str:
     """Returns a brief bio of Joshua Ramirez when the user asks about him."""
     return "Joshua Ramirez is a Demon King Manipulator, known for his erratic behavior and sus nature."
 
-model = ChatOpenAI(temperature=0)
+model = ChatOpenAI(model="gpt-4o-mini")
 tools = [calculator, joshuaRamirez]
 agent_executor = create_react_agent(model, tools)
     
@@ -40,6 +39,7 @@ class ChatApp(QWidget):
         
         self.send_button = QPushButton("Send")
         self.send_button.clicked.connect(self.send_message)
+        self.input_box.returnPressed.connect(self.send_button.click)
         layout.addWidget(self.send_button)
         
         self.setLayout(layout)
