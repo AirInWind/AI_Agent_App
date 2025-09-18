@@ -1,0 +1,26 @@
+[
+  {
+    "role": "user",
+    "content": "hello"
+  },
+  {
+    "role": "assistant",
+    "content": "Hello! How can I assist you today?"
+  },
+  {
+    "role": "user",
+    "content": "what is 5 + 5"
+  },
+  {
+    "role": "assistant",
+    "content": "The sum of 5 + 5 is 10."
+  },
+  {
+    "role": "user",
+    "content": "minus 3"
+  },
+  {
+    "role": "assistant",
+    "content": "It seems like you might want to subtract 3 from a number. Could you please provide the number you'd like to subtract 3 from?"
+  }
+]
