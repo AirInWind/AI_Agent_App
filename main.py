@@ -70,7 +70,7 @@ class ChatApp(QWidget):
         
         if memory:
             self.chat_display.append("Loaded memory (recent):")
-            for item in memory[-10:]:
+            for item in memory[-50:]:
                 role = "You" if item.get("role") == "user" else "Assistant"
                 self.chat_display.append(f"{role}: {item.get('content')}")
             self.chat_display.append("")
