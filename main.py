@@ -12,7 +12,7 @@ load_dotenv() # Load environment variables from .env file
 
 # memory settings
 MEMORY_FILE = "memory.json"
-MAX_MEMORY_SIZE = 50 # total user+assistant messages
+MAX_MEMORY_SIZE = 150 # total user+assistant messages
 
 def load_memory():
     if os.path.exists(MEMORY_FILE):
@@ -70,7 +70,7 @@ class ChatApp(QWidget):
         
         if memory:
             self.chat_display.append("Loaded memory (recent):")
-            for item in memory[-50:]:
+            for item in memory[-150:]:
                 role = "You" if item.get("role") == "user" else "Assistant"
                 self.chat_display.append(f"{role}: {item.get('content')}")
             self.chat_display.append("")
