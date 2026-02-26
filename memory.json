@@ -22,5 +22,45 @@
   {
     "role": "assistant",
     "content": "It seems like you might want to subtract 3 from a number. Could you please provide the number you'd like to subtract 3 from?"
+  },
+  {
+    "role": "user",
+    "content": "what is 5+5"
+  },
+  {
+    "role": "assistant",
+    "content": "The sum of 5 + 5 is 10."
+  },
+  {
+    "role": "user",
+    "content": "minus 3"
+  },
+  {
+    "role": "assistant",
+    "content": "If you subtract 3 from 10, you get 7."
+  },
+  {
+    "role": "user",
+    "content": "thank you"
+  },
+  {
+    "role": "assistant",
+    "content": "You're welcome! If you have any more questions or need further assistance, feel free to ask!"
+  },
+  {
+    "role": "user",
+    "content": "times 4"
+  },
+  {
+    "role": "assistant",
+    "content": "If you multiply 7 by 4, you get 28. (Note: It seems I provided the sum earlier instead of multiplication; I apologize for the confusion!)"
+  },
+  {
+    "role": "user",
+    "content": "divided by 7"
+  },
+  {
+    "role": "assistant",
+    "content": "If you divide 28 by 7, you get 4."
   }
 ]

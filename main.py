@@ -93,7 +93,7 @@ class ChatApp(QWidget):
         
         response = ""
         
-        for chunk in agent_executor.stream ({"messages": [HumanMessage(content=user_input)]}):
+        for chunk in agent_executor.stream ({"messages": messages}):
             if "agent" in chunk and "messages" in chunk["agent"]:
                 for message in chunk["agent"]["messages"]:
                     response += message.content
